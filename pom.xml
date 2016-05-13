@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>xyz.alphasurvival</groupId>
+  <artifactId>AlphaSurvival</artifactId>
+  <version>1.2.0.0-SNAPSHOT</version>
+  <name>AlphaSurvival</name>
+  <description>The core plugin for AlphaSurvival.</description>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <repositories>
+  </repositories>
+
+  <dependencies>
+    <!-- Following dependency is provided by CraftBukkit -->
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>10.0.1</version>
+      <type>jar</type>
+      <scope>provided</scope>
+    </dependency>
+    <!-- Testing dependencies -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.10</version>
+      <type>jar</type>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+    	<groupId>org.spigotmc</groupId>
+    	<artifactId>spigot-api</artifactId>
+    	<version>1.9-R0.1-SNAPSHOT</version>
+    	<scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <!-- Filter only plugin.yml & config.yml-->
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+        <includes>
+          <include>plugin.yml</include>
+          <include>config.yml</include>
+        </includes>
+      </resource>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>false</filtering>
+        <excludes>
+          <exclude>plugin.yml</exclude>
+          <exclude>config.yml</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <!-- Minimum Minecraft requirement -->
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <url>web.alphasurvival.xyz</url>
+</project>

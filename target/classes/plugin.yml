@@ -1,0 +1,89 @@
+name: AlphaSurvival
+main: xyz.alphasurvival.Main
+version: 1.2.0.0
+author: AlphaGladiator
+description: The core plugin of AlphaSurvival.
+commands:
+  help:
+    description: Shows commands.
+    usage: /<command>
+  ?:
+    description: Redirects to the /help command.
+    usage: /<command>
+  message:
+    description: Sends a private message to a player.
+    usage: /<command>
+    aliases: [m, msg]
+  rules:
+    description: Displays the rules of the server.
+    usage: /<command>
+  gamenotes:
+    description: Shows you game modifications.
+    usage: /<command>
+  spawn:
+    description: Teleports you to spawn.
+    usage: /<command>
+  web:
+    description: Tells you our website link
+    aliases: [website, weblink]
+    usage: /<command>
+  giveaway:
+    description: Does a rank giveaway.
+    usage: /<command>
+  keygiveaway:
+    description: Does a Crate Key Giveaway.
+    usage: /<command>
+    aliases: [kgiveaway, kgive]
+  warp:
+    description: Various.
+    usage: /<command>
+  home:
+    description: Various.
+    usage: /<command>
+  op:
+    description: Disables /op.
+    usage: /<command>
+  heal:
+    description: Heals the specified player or yourself.
+    usage: /<command>
+  feed:
+    description: Feeds the specified player or yourself.
+    usage: /<command>
+  workbench:
+    description: Opens a workbench.
+    usage: /<command>
+    aliases: [craft, wb]
+  enderchest:
+    description: Opens your ender chest.
+    usage: /<command>
+    aliases: [echest, ec]
+  nickname:
+    description: Gives you a nickname.
+    usage: /<command>
+    aliases: [nick]
+  npcmsg:
+    description: Sends a message from a NPC to a player.
+    usage: /<command>
+  class:
+    description: Lets you choose your class.
+    usage: /<command>
+  stats:
+    description: See your stats.
+    usage: /<command>
+    aliases: [statistics]
+  skills:
+    description: Use your skills.
+    usage: /<command>
+    aliases: [skill]
+  link:
+    description: Link a skill to a item.
+    usage: /<command>
+  unlink:
+    description: Unlink a skill from a item.
+    usage: /<command>
+  list:
+    description: Lists online players.
+    usage: /<command>
+  ranks:
+    description: Lists your ranks.
+    usage: /<command>
